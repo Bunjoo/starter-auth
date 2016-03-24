@@ -49,12 +49,11 @@ class Application extends CI_Controller {
         $userid = $this->session->userdata('userID');
         $userRole = $this->session->userdata('userRole');
         $userName = $this->session->userdata('userName');
-        //var_dump($userRole);
 
+        $choices[] = array('name' => "Alpha", 'link' => '/alpha');
         if ($userid == null) // Not logged in
             $choices[] = array('name' => "Login", 'link' => '/auth');
         else {
-            $choices[] = array('name' => "Alpha", 'link' => '/alpha');
             $choices[] = array('name' => "Beta", 'link' => '/beta');
             if($userRole == 'admin')
                 $choices[] = array('name' => "Gamma", 'link' => '/gamma');
