@@ -21,7 +21,7 @@ class Gamma extends Application {
 
 	function index()
 	{
-		$this->data['pagebody'] = 'gamma';
+		$this->data['pagebody'] = 'Gamma';
 		$this->render();
 	}
 

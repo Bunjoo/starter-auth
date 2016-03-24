@@ -28,7 +28,6 @@ if (!defined('APPPATH'))
 		</div>
             </div>           
             <div id="content">
-                
                 {content}
             </div>
             <div id="footer" class="span12">
